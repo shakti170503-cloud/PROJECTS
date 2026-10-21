@@ -21,7 +21,7 @@ def game_easy():
       print(f"You have scored: {points}")
       ask_player_again()
     else:
-      print("LOWER" if guess1<k else "HIGHER")
+      print("LOWER" if guess1>k else "HIGHER")
       guess2 = int(input("Please enter your second guess: "))
       if guess2 == k:
         print("You won!")
@@ -29,7 +29,7 @@ def game_easy():
         print(f"You have scored: {points}")
         ask_player_again()
       else:
-        print("LOWER" if guess2<k else "HIGHER")
+        print("LOWER" if guess2>k else "HIGHER")
         guess3 = int(input("Please enter your third guess: "))
         if guess3 == k:
           print("You won!")
@@ -59,7 +59,7 @@ def game_medium():
       print(f"You have scored: {points}")
       ask_player_again()
     else:
-      print("LOWER" if guess1<k else "HIGHER")
+      print("LOWER" if guess1>k else "HIGHER")
       guess2 = int(input("Please enter your second guess: "))
       if guess2 == k:
         print("You won!")
@@ -67,7 +67,7 @@ def game_medium():
         print(f"You have scored: {points}")
         ask_player_again()
       else:
-        print("LOWER" if guess2<k else "HIGHER")
+        print("LOWER" if guess2>k else "HIGHER")
         guess3 = int(input("Please enter your third guess: "))
         if guess3 == k:
           print("You won!")
@@ -111,7 +111,7 @@ def game_hard():
       print(f"You have scored: {points}")
       ask_player_again()
     else:
-      print("LOWER" if guess1<k else "HIGHER")
+      print("LOWER" if guess1>k else "HIGHER")
       guess2 = int(input("Please enter your second guess: "))
       if guess2 == k:
         print("You won!")
@@ -119,7 +119,7 @@ def game_hard():
         print(f"You have scored: {points}")
         ask_player_again()
       else:
-        print("LOWER" if guess1<k else "HIGHER")
+        print("LOWER" if guess1>k else "HIGHER")
         guess3 = int(input("Please enter your third guess: "))
         if guess3 == k:
           print("You won!")
