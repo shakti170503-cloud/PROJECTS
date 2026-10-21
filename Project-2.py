@@ -14,26 +14,28 @@ def game_easy():
     global points
     number1 = randint(1,15) 
     k = number1
-    guess = int(input("Please Enter your first guess: "))
-    if guess == k:
+    guess1 = int(input("Please Enter your first guess: "))
+    if guess1 == k:
       print("You Won!")
+      points += 100
       print(f"You have scored: {points}")
       ask_player_again()
-      points += 100
     else:
+      print("LOWER" if guess1<k else "HIGHER")
       guess2 = int(input("Please enter your second guess: "))
       if guess2 == k:
         print("You won!")
+        points += 60
         print(f"You have scored: {points}")
         ask_player_again()
-        points += 60
       else:
+        print("LOWER" if guess2<k else "HIGHER")
         guess3 = int(input("Please enter your third guess: "))
         if guess3 == k:
           print("You won!")
+          points += 30
           print(f"You have scored: {points}")
           ask_player_again()
-          points += 30
         else:
           print(f"Your number was: {k}")
           print(f"You have scored: {points}")
@@ -45,30 +47,33 @@ def game_easy():
           else:
             print("Thank You. :)")
             quit()
+
 def game_medium(): 
     global points
     number2 = randint(1,50)
     k = number2
-    guess = int(input("Please Enter your first guess: "))
-    if guess == k:
+    guess1 = int(input("Please Enter your first guess: "))
+    if guess1 == k:
       print("You Won!")
+      points += 100
       print(f"You have scored: {points}")
       ask_player_again()
-      points += 100
     else:
+      print("LOWER" if guess1<k else "HIGHER")
       guess2 = int(input("Please enter your second guess: "))
       if guess2 == k:
         print("You won!")
+        points += 70
         print(f"You have scored: {points}")
         ask_player_again()
-        points += 70
       else:
+        print("LOWER" if guess2<k else "HIGHER")
         guess3 = int(input("Please enter your third guess: "))
         if guess3 == k:
           print("You won!")
+          points += 40
           print(f"You have scored: {points}")
           ask_player_again()
-          points += 40
         else:
           print(f"Your number was: {k}")
           print(f"You have scored: {points}")
@@ -94,30 +99,33 @@ def ask_player():
       game_hard()
 
     # print(f"You have scored: {points}")
+
 def game_hard(): 
     global points
     number3 = randint(1,100)
     k = number3
-    guess = int(input("Please Enter your first guess: "))
-    if guess == k:
+    guess1 = int(input("Please Enter your first guess: "))
+    if guess1 == k:
       print("You Won!")
+      points += 100
       print(f"You have scored: {points}")
       ask_player_again()
-      points += 100
     else:
+      print("LOWER" if guess1<k else "HIGHER")
       guess2 = int(input("Please enter your second guess: "))
       if guess2 == k:
         print("You won!")
+        points += 80
         print(f"You have scored: {points}")
         ask_player_again()
-        points += 80
       else:
+        print("LOWER" if guess1<k else "HIGHER")
         guess3 = int(input("Please enter your third guess: "))
         if guess3 == k:
           print("You won!")
+          points += 50
           print(f"You have scored: {points}")
           ask_player_again()
-          points += 50
         else:
           print(f"Your number was: {k}")
           print(f"You have scored: {points}")
